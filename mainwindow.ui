@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1621</width>
+    <height>863</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Fenêtre Principale</string>
+  </property>
+  <property name="TailleBD" stdset="0">
+   <number>0</number>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>30</y>
+      <width>1301</width>
+      <height>701</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>3</number>
+    </property>
+    <widget class="QWidget" name="page_17">
+     <widget class="QGroupBox" name="boiteSuppression">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>160</y>
+        <width>1201</width>
+        <height>321</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Supprimer une voiture</string>
+      </property>
+      <layout class="QGridLayout" name="layoutSuppression">
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="champCleSuppression"/>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="etiquetteHashFuncSuppression">
+         <property name="text">
+          <string>Fonction de hachage:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="etiquetteCleSuppression">
+         <property name="text">
+          <string>Clé:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0" colspan="2">
+        <widget class="QPushButton" name="boutonSupprimer">
+         <property name="text">
+          <string>Supprimer</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QSpinBox" name="champHashFuncSuppression"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>80</y>
+        <width>291</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>PAGE POUR SUPPRIMER UNE VOITURE</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_1">
+     <widget class="QGroupBox" name="boiteResultat">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>230</y>
+        <width>701</width>
+        <height>371</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Résultats de la recherche</string>
+      </property>
+      <layout class="QGridLayout" name="layoutResultat_3">
+       <item row="5" column="1">
+        <widget class="QLabel" name="valeurPresentationResultat_3">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="etiquetteMarqueResultat_3">
+         <property name="text">
+          <string>Marque:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLabel" name="valeurGammeResultat_3">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="etiquetteAnneeResultat_3">
+         <property name="text">
+          <string>Année:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="etiquetteCleResultat_3">
+         <property name="text">
+          <string>Clé:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="etiquetteGammeResultat_3">
+         <property name="text">
+          <string>Gamme:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="etiquettePhotoResultat_3">
+         <property name="text">
+          <string>Chemin vers la photo:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QLabel" name="valeurAnneeResultat_3">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLabel" name="valeurModeleResultat_3">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1">
+        <widget class="QLabel" name="valeurPhotoResultat_3">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="etiquettePresentationResultat_3">
+         <property name="text">
+          <string>Présentation:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLabel" name="valeurCleResultat_3">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLabel" name="valeurMarqueResultat_3">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="etiquetteModeleResultat_3">
+         <property name="text">
+          <string>Modèle:</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QGroupBox" name="boiteRechercher">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>70</y>
+        <width>591</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Rechercher une voiture</string>
+      </property>
+      <layout class="QGridLayout" name="layoutRechercher">
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="champCleRechercher"/>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="etiquetteCleRechercher">
+         <property name="text">
+          <string>Clé:</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QPushButton" name="boutonRechercher">
+      <property name="geometry">
+       <rect>
+        <x>970</x>
+        <y>120</y>
+        <width>151</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Rechercher</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="etiquetteImageResultat_3">
+      <property name="geometry">
+       <rect>
+        <x>730</x>
+        <y>200</y>
+        <width>521</width>
+        <height>411</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>200</width>
+        <height>200</height>
+       </size>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="text">
+       <string>Photo</string>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>10</y>
+        <width>301</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>PAGE POUR RECHERCHER UNE VOITURE</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="etiquetteHashFuncSuppression_2">
+      <property name="geometry">
+       <rect>
+        <x>610</x>
+        <y>120</y>
+        <width>221</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Fonction de hachage 1 , 2 ou 3 :</string>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="champHashFuncRechercher">
+      <property name="geometry">
+       <rect>
+        <x>830</x>
+        <y>120</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_18">
+     <widget class="QGroupBox" name="boiteInsertion">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>70</y>
+        <width>1061</width>
+        <height>501</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Insérer une voiture</string>
+      </property>
+      <layout class="QGridLayout" name="layoutInsertion">
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="champMarqueInsertion"/>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLineEdit" name="champAnneeInsertion"/>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="etiquetteGammeInsertion">
+         <property name="text">
+          <string>Gamme:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="0" colspan="2">
+        <widget class="QPushButton" name="boutonInserer_2">
+         <property name="text">
+          <string>Insérer</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="etiquettePhotoInsertion">
+         <property name="text">
+          <string>Photo:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="etiquetteMarqueInsertion">
+         <property name="text">
+          <string>Marque:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1">
+        <widget class="QLineEdit" name="champPhotoInsertion"/>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="etiquetteModeleInsertion">
+         <property name="text">
+          <string>Modèle:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="champGammeInsertion"/>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="etiquetteCleInsertion">
+         <property name="text">
+          <string>Clé:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="etiquetteAnneeInsertion">
+         <property name="text">
+          <string>Année:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="0">
+        <widget class="QLabel" name="etiquetteHashFuncInsertion">
+         <property name="text">
+          <string>Fonction de hachage:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QLineEdit" name="champModeleInsertion"/>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="champCleInsertion"/>
+       </item>
+       <item row="8" column="1">
+        <widget class="QSpinBox" name="champHashFuncInsertion"/>
+       </item>
+       <item row="7" column="0">
+        <widget class="QLabel" name="etiquettePresentationInsertion">
+         <property name="text">
+          <string>Présentation:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="1">
+        <widget class="QLineEdit" name="champPresentationInsertion"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>10</y>
+        <width>301</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>PAGE POUR INSERER UNE VOITURE</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_4"/>
+    <widget class="QWidget" name="page">
+     <widget class="QTableView" name="tableView">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>50</y>
+        <width>961</width>
+        <height>631</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="boutonAchageBase">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>10</y>
+        <width>171</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>affichagge Base</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_2"/>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1621</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFichier">
+    <property name="title">
+     <string>Base</string>
+    </property>
+    <addaction name="actionCharger"/>
+    <addaction name="actionCharger_2"/>
+    <addaction name="actionCharger_3"/>
+    <addaction name="actionQuitter"/>
+    <addaction name="actionTaille"/>
+    <addaction name="actionSauvegarderBase"/>
+    <addaction name="actionAffichage"/>
+   </widget>
+   <widget class="QMenu" name="menuEdition">
+    <property name="title">
+     <string>Voiture</string>
+    </property>
+    <addaction name="actionInserer"/>
+    <addaction name="actionSupprimer"/>
+    <addaction name="separator"/>
+    <addaction name="actionRechercher_2"/>
+    <addaction name="actionmemeMarque"/>
+   </widget>
+   <widget class="QMenu" name="menuCourbes">
+    <property name="title">
+     <string>Courbes</string>
+    </property>
+    <addaction name="actionhachage_Sans_hachage"/>
+    <addaction name="actionhachage_f1_hachage_f2"/>
+   </widget>
+   <widget class="QMenu" name="menufonction_hachage">
+    <property name="title">
+     <string>fonction hachage</string>
+    </property>
+    <addaction name="actionf1_2"/>
+    <addaction name="actionf2_2"/>
+    <addaction name="actionf3_2"/>
+   </widget>
+   <addaction name="menuFichier"/>
+   <addaction name="menuEdition"/>
+   <addaction name="menufonction_hachage"/>
+   <addaction name="menuCourbes"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionCharger">
+   <property name="text">
+    <string>Charger  table hachage f1</string>
+   </property>
+  </action>
+  <action name="actionQuitter">
+   <property name="text">
+    <string>Quitter</string>
+   </property>
+  </action>
+  <action name="actionInserer">
+   <property name="text">
+    <string>Insérer une voiture</string>
+   </property>
+  </action>
+  <action name="actionSupprimer">
+   <property name="text">
+    <string>Supprimer une voiture</string>
+   </property>
+  </action>
+  <action name="actionTaille">
+   <property name="text">
+    <string>Taille</string>
+   </property>
+  </action>
+  <action name="actionRechercher">
+   <property name="text">
+    <string>Rechercher</string>
+   </property>
+  </action>
+  <action name="actionf1">
+   <property name="text">
+    <string>f1</string>
+   </property>
+  </action>
+  <action name="actionf2">
+   <property name="text">
+    <string>f2</string>
+   </property>
+  </action>
+  <action name="actionf3">
+   <property name="text">
+    <string>f3</string>
+   </property>
+  </action>
+  <action name="actionhachage_Sans_hachage">
+   <property name="text">
+    <string>hachage/Sans hachage</string>
+   </property>
+  </action>
+  <action name="actionhachage_f1_hachage_f2">
+   <property name="text">
+    <string>hachage(f1)/hachage(f2)</string>
+   </property>
+  </action>
+  <action name="actionSauvegarderBase">
+   <property name="text">
+    <string>Sauvegarder</string>
+   </property>
+  </action>
+  <action name="actionRechercher_2">
+   <property name="text">
+    <string>Rechercher</string>
+   </property>
+  </action>
+  <action name="actionAffichage">
+   <property name="text">
+    <string>Affichage</string>
+   </property>
+  </action>
+  <action name="actionmemeMarque">
+   <property name="text">
+    <string>memeMarque</string>
+   </property>
+  </action>
+  <action name="actionf1_2">
+   <property name="text">
+    <string>f1</string>
+   </property>
+  </action>
+  <action name="actionf2_2">
+   <property name="text">
+    <string>f2</string>
+   </property>
+  </action>
+  <action name="actionf3_2">
+   <property name="text">
+    <string>f3</string>
+   </property>
+  </action>
+  <action name="actionCharger_2">
+   <property name="text">
+    <string>Charger table hachage f2</string>
+   </property>
+  </action>
+  <action name="actionCharger_3">
+   <property name="text">
+    <string>Charger table hachage f3</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
